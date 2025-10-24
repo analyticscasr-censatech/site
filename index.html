@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<p class="mt-2 text-gray-600">Dashboards en Power BI, modelado SQL/PostgreSQL, ETLs en Python, SAP Datasphere, AWS.</p>
+</div>
+<div class="rounded-2xl border p-6">
+<h3 class="font-bold text-xl">Soporte & Infra</h3>
+<p class="mt-2 text-gray-600">Servidores, redes, CCTV, Odoo/ERP, backups y seguridad.</p>
+</div>
+<div class="rounded-2xl border p-6">
+<h3 class="font-bold text-xl">Periféricos & Suministros</h3>
+<p class="mt-2 text-gray-600">Impresoras, escáneres, POS, consumibles y accesorios con instalación.</p>
+</div>
+</div>
+</div>
+</section>
 
+
+<section id="soluciones" class="py-16 bg-gray-50">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="text-3xl font-extrabold">Soluciones</h2>
+<div class="mt-8 grid md:grid-cols-3 gap-6">
+<div class="rounded-2xl border p-6 bg-white"><h3 class="font-bold">Flujo de Caja en Power BI</h3><p class="text-gray-600 mt-2">Proyección vs. realizado, conexión a SQL/SAP y alertas.</p></div>
+<div class="rounded-2xl border p-6 bg-white"><h3 class="font-bold">Mesa de ayuda 24/7</h3><p class="text-gray-600 mt-2">Ticketing, monitoreo y SLA.</p></div>
+<div class="rounded-2xl border p-6 bg-white"><h3 class="font-bold">Kit de Punto de Venta</h3><p class="text-gray-600 mt-2">Impresora, lector, cajón y configuración con tu ERP.</p></div>
+</div>
+</div>
+</section>
+
+
+<section id="contacto" class="py-16">
+<div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+<div>
+<h2 class="text-3xl font-extrabold">Contacto</h2>
+<ul class="mt-4 space-y-2 text-gray-700 text-sm">
+<li><strong>Email:</strong> hola@censatech.net</li>
+<li><strong>WhatsApp:</strong> +503 0000 0000</li>
+<li><strong>Horario:</strong> Lun–Vie 8:00–18:00 (CST)</li>
+</ul>
+</div>
+<form class="rounded-2xl border p-6" method="post" action="/contact">
+<label class="block text-sm font-medium">Nombre</label>
+<input required name="nombre" class="mt-1 w-full border rounded-xl p-3" placeholder="Tu nombre" />
+<label class="block text-sm font-medium mt-4">Email</label>
+<input required type="email" name="email" class="mt-1 w-full border rounded-xl p-3" placeholder="tucorreo@dominio.com" />
+<label class="block text-sm font-medium mt-4">Mensaje</label>
+<textarea required name="mensaje" rows="4" class="mt-1 w-full border rounded-xl p-3" placeholder="Cuéntanos qué necesitas"></textarea>
+<button class="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-2xl font-semibold shadow bg-[var(--accent)] text-white" type="submit">Enviar</button>
+<p class="text-xs text-gray-500 mt-2">Protegido por SSL. No compartimos tus datos.</p>
+</form>
+</div>
+</section>
+
+
+<footer class="py-8 border-t">
+<div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-sm">© <span id="y"></span> Censa Tech. Todos los derechos reservados.</p>
+<div class="flex items-center gap-4 text-sm">
+<a href="#" class="hover:opacity-80">Términos</a>
+<a href="#" class="hover:opacity-80">Privacidad</a>
+</div>
+</div>
+</footer>
+
+
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
