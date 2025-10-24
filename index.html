@@ -1,66 +1,175 @@
 <!DOCTYPE html>
-<p class="mt-2 text-gray-600">Dashboards en Power BI, modelado SQL/PostgreSQL, ETLs en Python, SAP Datasphere, AWS.</p>
-</div>
-<div class="rounded-2xl border p-6">
-<h3 class="font-bold text-xl">Soporte & Infra</h3>
-<p class="mt-2 text-gray-600">Servidores, redes, CCTV, Odoo/ERP, backups y seguridad.</p>
-</div>
-<div class="rounded-2xl border p-6">
-<h3 class="font-bold text-xl">Periféricos & Suministros</h3>
-<p class="mt-2 text-gray-600">Impresoras, escáneres, POS, consumibles y accesorios con instalación.</p>
-</div>
-</div>
-</div>
-</section>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Censa Tech — Datos, Soporte & Periféricos</title>
+  <meta name="description" content="Consultoría de análisis de datos, soporte de TI y venta de periféricos en El Salvador." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#223474; --accent:#f2313f; --ink:#0f172a; --muted:#64748b; --bg:#0b122e;
+      --card:#ffffff; --soft:#f1f5f9; --ring:rgba(34,52,116,.12)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--ink);background:#fff}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.2rem;border-radius:16px;font-weight:700;border:1px solid transparent;box-shadow:0 6px 16px -6px var(--ring);transition:.2s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 20px -8px var(--ring)}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{color:#fff;border-color:#ffffff3a}
+    .pill{display:inline-block;padding:.25rem .7rem;border-radius:999px;background:#ffffff1f;color:#fff;font-size:.8rem;font-weight:600}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:18px;padding:24px;box-shadow:0 10px 24px -18px rgba(2,6,23,.3)}
+    header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,rgba(11,18,46,.85),rgba(11,18,46,.65));backdrop-filter:saturate(160%) blur(6px)}
+    header .inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;color:#fff}
+    nav a{color:#e5e7eb;text-decoration:none;margin-left:22px;font-weight:600}
+    nav a:hover{opacity:.85}
+    .hero{background:radial-gradient(1200px 500px at 70% -20%, #2a3a93 10%, transparent 60%),linear-gradient(180deg,#0b122e, #1b2254 55%, #21307b 100%);color:#fff}
+    .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;padding:72px 0}
+    .hero h1{font-size:44px;line-height:1.1;margin:14px 0 10px}
+    .muted{color:#cbd5e1}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center}
+    .kpis .box{padding:18px;border-radius:14px;background:#f8fafc}
+    section{padding:72px 0}
+    h2{font-size:34px;margin:0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .badge{display:inline-block;font-size:.75rem;background:#eef2ff;color:#334155;padding:.25rem .6rem;border-radius:999px;font-weight:700}
+    .solutions{background:#f8fafc}
+    footer{border-top:1px solid #e5e7eb;padding:28px 0}
+    @media (max-width:920px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.hero h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="container inner">
+      <a href="#" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none">
+        <img src="/assets/logo.svg" alt="Censa Tech" width="28" height="28"/>
+        <strong style="letter-spacing:.2px">Censa Tech</strong>
+      </a>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-ghost" href="#contacto">Contáctanos</a>
+    </div>
+  </header>
 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">Analítica · Soporte · Periféricos</span>
+        <h1>Decisiones con datos. Operación estable. <span style="color:var(--accent)">Tecnología lista para vender.</span></h1>
+        <p class="muted">Implementamos BI (Power BI/SQL/AWS), soporte de TI y periféricos para que tu empresa funcione más rápido, segura y rentable.</p>
+        <div style="margin-top:18px">
+          <a class="btn btn-primary" href="#servicios">Ver servicios</a>
+          <a class="btn btn-ghost" href="#contacto" style="margin-left:8px">Solicitar cotización</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;font-size:18px">Panel de Impacto (demo)</h3>
+          <div class="kpis">
+            <div class="box"><div style="font-size:26px;font-weight:800">↑ 18%</div><div class="muted" style="font-size:12px">Ticket promedio</div></div>
+            <div class="box"><div style="font-size:26px;font-weight:800">-32%</div><div class="muted" style="font-size:12px">Incidencias</div></div>
+            <div class="box"><div style="font-size:26px;font-weight:800">99.9%</div><div class="muted" style="font-size:12px">Disponibilidad</div></div>
+          </div>
+          <p class="muted" style="font-size:12px;margin-top:8px">Ejemplo ilustrativo de resultados alcanzables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="soluciones" class="py-16 bg-gray-50">
-<div class="max-w-6xl mx-auto px-4">
-<h2 class="text-3xl font-extrabold">Soluciones</h2>
-<div class="mt-8 grid md:grid-cols-3 gap-6">
-<div class="rounded-2xl border p-6 bg-white"><h3 class="font-bold">Flujo de Caja en Power BI</h3><p class="text-gray-600 mt-2">Proyección vs. realizado, conexión a SQL/SAP y alertas.</p></div>
-<div class="rounded-2xl border p-6 bg-white"><h3 class="font-bold">Mesa de ayuda 24/7</h3><p class="text-gray-600 mt-2">Ticketing, monitoreo y SLA.</p></div>
-<div class="rounded-2xl border p-6 bg-white"><h3 class="font-bold">Kit de Punto de Venta</h3><p class="text-gray-600 mt-2">Impresora, lector, cajón y configuración con tu ERP.</p></div>
-</div>
-</div>
-</section>
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <p class="muted" style="margin-top:6px">Contrata uno o combínalos según tu necesidad.</p>
+      <div class="grid-3" style="margin-top:22px">
+        <div class="card">
+          <span class="badge">Datos</span>
+          <h3 style="margin:10px 0 6px">Análisis & BI</h3>
+          <p class="muted">Dashboards en Power BI, modelado SQL/PostgreSQL, ETLs en Python, SAP Datasphere, AWS.</p>
+          <ul style="margin:14px 0 0 18px;color:#334155;line-height:1.6">
+            <li>KPIs financieros y comerciales</li>
+            <li>Data Warehouse en la nube</li>
+            <li>Automatización de reportes</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge" style="background:#dcfce7;color:#14532d">Soporte</span>
+          <h3 style="margin:10px 0 6px">Soporte & Infra</h3>
+          <p class="muted">Servidores, redes, CCTV, Odoo/ERP, backups y seguridad.</p>
+          <ul style="margin:14px 0 0 18px;color:#334155;line-height:1.6">
+            <li>Monitoreo y SLA</li>
+            <li>Seguridad y copias de respaldo</li>
+            <li>Migraciones a la nube</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge" style="background:#ffe4e6;color:#881337">Periféricos</span>
+          <h3 style="margin:10px 0 6px">Periféricos & Suministros</h3>
+          <p class="muted">Impresoras, escáneres, POS, consumibles y accesorios con instalación.</p>
+          <ul style="margin:14px 0 0 18px;color:#334155;line-height:1.6">
+            <li>Catálogo corporativo</li>
+            <li>Integración con ERP/POS</li>
+            <li>Soporte postventa</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- SOLUCIONES -->
+  <section id="soluciones" class="solutions">
+    <div class="container">
+      <h2>Soluciones</h2>
+      <div class="grid-3" style="margin-top:22px">
+        <div class="card"><h3>Flujo de Caja en Power BI</h3><p class="muted">Proyección vs. realizado, conexión a SQL/SAP y alertas.</p></div>
+        <div class="card"><h3>Mesa de ayuda 24/7</h3><p class="muted">Ticketing, monitoreo y SLA.</p></div>
+        <div class="card"><h3>Kit de Punto de Venta</h3><p class="muted">Impresora, lector, cajón y configuración con tu ERP.</p></div>
+      </div>
+    </div>
+  </section>
 
-<section id="contacto" class="py-16">
-<div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-<div>
-<h2 class="text-3xl font-extrabold">Contacto</h2>
-<ul class="mt-4 space-y-2 text-gray-700 text-sm">
-<li><strong>Email:</strong> hola@censatech.net</li>
-<li><strong>WhatsApp:</strong> +503 0000 0000</li>
-<li><strong>Horario:</strong> Lun–Vie 8:00–18:00 (CST)</li>
-</ul>
-</div>
-<form class="rounded-2xl border p-6" method="post" action="/contact">
-<label class="block text-sm font-medium">Nombre</label>
-<input required name="nombre" class="mt-1 w-full border rounded-xl p-3" placeholder="Tu nombre" />
-<label class="block text-sm font-medium mt-4">Email</label>
-<input required type="email" name="email" class="mt-1 w-full border rounded-xl p-3" placeholder="tucorreo@dominio.com" />
-<label class="block text-sm font-medium mt-4">Mensaje</label>
-<textarea required name="mensaje" rows="4" class="mt-1 w-full border rounded-xl p-3" placeholder="Cuéntanos qué necesitas"></textarea>
-<button class="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-2xl font-semibold shadow bg-[var(--accent)] text-white" type="submit">Enviar</button>
-<p class="text-xs text-gray-500 mt-2">Protegido por SSL. No compartimos tus datos.</p>
-</form>
-</div>
-</section>
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container" style="display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:start">
+      <div>
+        <h2>Contacto</h2>
+        <ul style="margin:14px 0 0;padding:0;list-style:none;color:#334155;line-height:1.9">
+          <li><strong>Email:</strong> hola@censatech.net</li>
+          <li><strong>WhatsApp:</strong> +503 0000 0000</li>
+          <li><strong>Horario:</strong> Lun–Vie 8:00–18:00 (CST)</li>
+        </ul>
+      </div>
+      <form class="card" method="post" action="/contact">
+        <label>Nombre</label>
+        <input required name="nombre" placeholder="Tu nombre" style="margin-top:6px;width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px"/>
+        <label style="margin-top:12px">Email</label>
+        <input required type="email" name="email" placeholder="tucorreo@dominio.com" style="margin-top:6px;width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px"/>
+        <label style="margin-top:12px">Mensaje</label>
+        <textarea required name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas" style="margin-top:6px;width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px"></textarea>
+        <button class="btn btn-primary" type="submit" style="margin-top:12px">Enviar</button>
+        <p class="muted" style="font-size:12px;margin-top:6px">Protegido por SSL. No compartimos tus datos.</p>
+      </form>
+    </div>
+  </section>
 
-
-<footer class="py-8 border-t">
-<div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-<p class="text-sm">© <span id="y"></span> Censa Tech. Todos los derechos reservados.</p>
-<div class="flex items-center gap-4 text-sm">
-<a href="#" class="hover:opacity-80">Términos</a>
-<a href="#" class="hover:opacity-80">Privacidad</a>
-</div>
-</div>
-</footer>
-
-
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+      <p style="margin:0;font-size:14px">© <span id="y"></span> Censa Tech. Todos los derechos reservados.</p>
+      <div style="display:flex;gap:14px">
+        <a href="#" style="font-size:14px;color:#334155;text-decoration:none">Términos</a>
+        <a href="#" style="font-size:14px;color:#334155;text-decoration:none">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
