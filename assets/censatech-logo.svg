@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rounded square -->
+  <rect x="8" y="8" width="112" height="112" rx="18" fill="#223474"/>
+  <!-- Bars -->
+  <rect x="28" y="78" width="10" height="22" rx="2" fill="#FFFFFF" opacity="0.95"/>
+  <rect x="46" y="68" width="10" height="32" rx="2" fill="#FFFFFF" opacity="0.97"/>
+  <rect x="64" y="56" width="10" height="44" rx="2" fill="#FFFFFF"/>
+  <rect x="82" y="44" width="10" height="56" rx="2" fill="#FFFFFF"/>
+  <!-- Upward trend arrow -->
+  <path d="M26 70 L52 56 L66 64 L90 36" fill="none" stroke="#f2313f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M90 36 l-2 11 l10-5 l10-5 l-11-2 l-11-2 z" fill="#f2313f"/>
+</svg>
